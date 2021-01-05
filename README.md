@@ -2,4 +2,4 @@
 Site câmara arquitetura
 
 ## Tarefas
-Controle será realizado no github
+Controle de arquivos será realizado no github
