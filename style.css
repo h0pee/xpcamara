@@ -20,7 +20,7 @@
     height: 2rem;
     position: fixed;
     z-index: 100;
-    right: 2rem;
+    right: 4rem;
     top: 2rem;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
 }
 
 .show-menu .hamburguer{
-    right: 16rem;
+    right: 11rem;
 }
 
 .line{
@@ -37,11 +37,11 @@
     height: .1rem;
     background-color: white;
     box-shadow: 0.1rem 0.1rem 1px black;
-    transition: transform 1s;
+    transition: transform .5s;
 }
 
 .show-menu #line1{
-    transform: rotate(45deg) translate(.3rem, .3rem);
+    transform: rotate(45deg) translate(.3rem, .4rem);
 }
 
 .show-menu #line2{
@@ -63,7 +63,8 @@
     align-items: center;
     background-color: rgb(119, 34, 34);
     color: white;
-    font-family: var(--font-action);
+    font-family: var(--font-secudary);
+
     opacity: 0;
 }
 
@@ -122,6 +123,7 @@ header{
     font-size: 4.5rem;
     font-family: var(--font-primary);
     font-weight: 200;
+    font-style: italic;
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .6);
     margin-bottom: 0.5rem;
     opacity: 0;
@@ -132,7 +134,8 @@ header{
     color: white;
     font-size: 3.5rem;
     font-family: var(--font-secudary);
-    font-weight: 900;
+    font-weight: 800;
+    font-style: italic;
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .6);
     margin-bottom: 2rem;
     opacity: 0;
@@ -172,9 +175,11 @@ header{
 }
 
 .sidebar{
-    width: 20rem;
+    width: 14rem;
     height: 100vh;
-    background-color: white;
+    background: #333333;
+    background: -webkit-linear-gradient(to left, #dd1818, #272727);
+    background: linear-gradient(to left, #dd1818, #272727);
     position: fixed;
     top: 0;
     right: -20rem;
@@ -197,13 +202,15 @@ header{
 }
 
 .menu-link{
-    font-family: var(--font-action);
+    font-family: var(--font-secudary);
+    font-weight: 900;
     font-size: 2rem;
-    color: rgb(99, 99, 99);
+    font-style: italic;
+    color: white;
 }
 
 .menu-link:hover{
-    color: rgb(119, 34, 34);
+    color: rgb(53, 53, 53);
 }
 
 .socialMedia{
@@ -212,11 +219,14 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    background: #333333; 
+    background: -webkit-linear-gradient(to left, #dd1818, #272727);
+    background: linear-gradient(to left, #dd1818, #272727);
+
 }
 
 .socialMedia i{
-    background-color: white;
-    color: gray;
+    color: white;
     height: 2.5rem;
     width: 2.5rem;
     font-size: 2rem;
@@ -226,5 +236,36 @@ header{
 }
 
 .socialMedia i:hover{
-    color: rgb(119, 34, 34);
+    color: rgb(53, 53, 53);
+}
+
+.sessao-projetos h1{
+    font-size: 6rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    color: rgb(97, 22, 22);
+} 
+
+.projetos{
+    color: rgb(97, 22, 22);
+    font-family: var(--font-primary);
+    display: flex;
+    margin-left: 5rem;
+}
+
+.projetos h2{
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.card{
+    width: 20rem;
+    height: 30rem;
+}
+
+.card .img-wrapper{
+    width: 50%;
+    height: 50%;
 }
