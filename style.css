@@ -239,16 +239,23 @@ header{
     color: rgb(53, 53, 53);
 }
 
+.sessao-projetos{
+    background: #c31432;
+    background: -webkit-linear-gradient(to right, #240b36, #99192e); 
+    background: linear-gradient(to right, #240b36, #99192e); 
+
+}
+
 .sessao-projetos h1{
     font-size: 4rem;
-    font-weight: 900;
+    font-weight: bolder;
     font-style: italic;
     text-align: center;
-    color: rgb(97, 22, 22);
+    color: white;
 } 
 
 .projetos{
-    color: rgb(97, 22, 22);
+    color: white;
     font-family: var(--font-primary);
     display: flex;
     margin-left: 5rem;
@@ -256,44 +263,140 @@ header{
 
 .projetos h2{
     font-size: 2rem;
-    font-weight: 100;
+    font-weight: bolder;
     font-style: italic;
+    display: flex;
+    color: white;
 }
 
 .card{
-    width: 300px;
-    height: 300px;
-    margin: 0;
-    padding: 0;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    padding-top: 3rem;
+}
+
+.card h3{
+    font-weight: bolder;
 }
 
 .card .card-img-wrapper{
     width: 100%;
     height: 100%;
-    /*width: 200px;
-    height: 200px;
-    margin-top: 10px;*/
+    display: flex;
+    padding-bottom: 10rem;
 }
 
 .card-img-wrapper img{
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     margin-top: 10px;
     border-radius: .5rem;
-    opacity: .8;
+    opacity: .5;
     justify-content: space-evenly; 
     bottom: 0;
+    cursor: pointer;
 }
 
 .card-img-wrapper img:hover{
-    opacity: .9;
+    opacity: 1;
     background-color: black;
 }
 
-.card-img-wrapper .card-info{
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(27, 27, 27);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+
+}
+
+.contato-esquerda{
+    width: 50%;
+    background: linear-gradient(rgba(88, 88, 88, 0.2), rgba(124, 124, 124, 0.5)), url(Imagens/logo10.jpg);
+    background-size: cover;
+    padding: 2rem 3rem 3rem 3rem;
+}
+
+.contato-direita{
+    width: 50%;
+    padding: 2rem 7rem 7rem 7rem;
+    background: #333333;
+    background: -webkit-linear-gradient(to left, #dd1818, #272727);
+    background: linear-gradient(to left, #dd1818, #272727);
+}
+
+.sessao-contato h1{
+    font-family: var(--font-primary);
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+}
+
+.sessao-contato form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-grupo{
+    position: relative;
+}
+
+.field{
+    border: none;
+    width: 25rem;
+    font-size: 1.2rem;
+    font-family: serif;
+    font-weight: lighter;
+    border-bottom: 1px dashed gray;
+    height: 2.2rem;
+    outline: none;
+    margin: 2rem 0;
+}
+
+.input-grupo textarea{
+    padding-top: 1.5rem;
+}
+
+.field-label{
     position: absolute;
-    bottom: 0;
-    padding: 2rem;
-    text-shadow: 0 0.1rem 0.3rem black;
+    left: 0;
+    top: 2.6rem;
+    font-size: 1.2rem;
+    font-family: var(--font-primary);
+    font-weight: lighter;
+    text-transform: uppercase;
+    transition: all .4s;
+    padding-left: .6rem;
+    padding-bottom: .6rem;
+}
+
+.field:focus ~ label{
+    top: 0;
+    color: white;
+}
+
+.field:focus{
+    border-bottom: 1px solid;
+}
+
+.btn-submit{
+    font-size: 1.5rem;
+    width: 50%;
+    height: 2rem;
+    
 }
