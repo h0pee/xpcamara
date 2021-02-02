@@ -104,11 +104,22 @@ header{
 }
 
 .img-wrapper img{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 80%;
     object-fit: cover;
     opacity: 0.5;
-    animation: zoom 4s;
+    animation: zoom 2s;
+    margin-top: 5rem;
+    margin-left: 4rem;
+    margin-bottom: 8rem;
+    border-radius: 2rem;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+
+#inicio img.selecionado{
+    opacity: 0.6;
 }
 
 @keyframes zoom{
@@ -121,17 +132,17 @@ header{
 }
 .banner{
     position: absolute;
-    top: 25%;
-    left: 2%;
+    top: 50%;
+    left: 8%;
 }
 
 .banner h1{
     color: white;
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-family: var(--font-primary);
     font-weight: 200;
     font-style: italic;
-    text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .6);
+    text-shadow: .2rem .15rem .5px rgba(0, 0, 0, .6);
     margin-bottom: 0.5rem;
     opacity: 0;
     animation: moveBanner 1s forwards;
@@ -139,11 +150,11 @@ header{
 
 .banner p{
     color: white;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-family: var(--font-secudary);
     font-weight: 800;
     font-style: italic;
-    text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .6);
+    text-shadow: .2rem .15rem .5px rgba(0, 0, 0, .6);
     margin-bottom: 2rem;
     opacity: 0;
     animation: moveBanner 1.6s forwards;
@@ -182,9 +193,12 @@ header{
 }
 
 .sidebar{
-    background: #0F2027; 
+    /*background: #0F2027; 
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);*/
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+    background: linear-gradient(to right, #243B55, #141E30);
     width: 14rem;
     height: 100vh;
     position: fixed;
@@ -211,8 +225,7 @@ header{
 
 .menu-link{
     font-family: var(--font-primary);
-    font-weight: lighter;
-    text-transform: uppercase;
+    font-weight: 100;
     font-size: 2rem;
     font-style: italic;
     color: white;
@@ -223,9 +236,9 @@ header{
 }
 
 .socialMedia{
-    background: #0F2027;  
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+    background: linear-gradient(to right, #243B55, #141E30);
     position: absolute;
     bottom: 2rem;
     width: 100%;
@@ -248,15 +261,18 @@ header{
 }
 
 .sessao-projetos{
-    background: #0F2027;  
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    background: #000000; 
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+    width: 100%;
+    height: 100%; 
+
 }
 
 .sessao-projetos h1{
     font-family: var(--font-primary);
     font-size: 4rem;
-    font-weight: bolder;
+    font-weight: 300;
     font-style: italic;
     text-align: center;
     text-decoration: underline;
@@ -363,14 +379,15 @@ header{
 }
 
 .sessao-textos h1{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bolder;
     font-style: italic;
     text-align: center;
     text-decoration: underline;
     color: black;
     font-family: var(--font-primary);
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
+    margin-left: 1rem;
 }
 
 .text-img-wrapper{
@@ -412,7 +429,7 @@ header{
 }
 
 .sessao-textos2 h1{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bolder;
     font-style: italic;
     text-align: center;
