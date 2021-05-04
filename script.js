@@ -4,14 +4,22 @@ hamburguer.addEventListener("click", ()=>
     document.querySelector(".container").classList.toggle("show-menu")
 )
 
+function redirect1(){
+    window.location.href="gallery.html"
+}
+
+function redirect2(){
+    window.location.href="gallery2.html"
+}
+
 let time=4000,
     imagemAtual=0,
-    imagens=document.querySelectorAll("#img-wrapper img")
+    imagens=document.querySelectorAll("#img-wrapper img"),
     maxImagens=imagens.length;
 
 function proxImagem(){
     imagens[imagemAtual]
-    .classList.remove("selecionado")
+    .classList.remove('selecionado')
 
     imagemAtual++
 
@@ -20,13 +28,12 @@ function proxImagem(){
     }
 
     imagens[imagemAtual]
-    .classList.add("selecionado")
+    .classList.add('selecionado')
 }      
 
 function start(){
     setInterval(()=>{
         proxImagem()
     }, time)
+    window.addEventListener('load', start);
 }
-
-window.addEventListener("load", start)
