@@ -20,13 +20,13 @@ h1{
     font-style: italic;
 }
 
-.header-gallery{
+.header_gallery1{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.img-row{
+.img_row{
     width: 300px;
     height: 300px;
     overflow: hidden;
@@ -44,7 +44,7 @@ h1{
     flex-wrap: wrap;
 }
 
-#modal-img{
+#modal_img{
     width: 65vw;
 }
 
@@ -56,14 +56,14 @@ h1{
     visibility: hidden;
 }
 
-.modal-content{
+.modal_content{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-#bt-close{
+#bt_close{
     color: white;
     background-color: black;
     position: absolute;

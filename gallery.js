@@ -1,7 +1,7 @@
 let imagens=document.querySelectorAll('.small_img');
 let modal=document.querySelector('.modal');
-let modalImg=document.querySelector('#modal-img');
-let btClose=document.querySelector('#bt-close');
+let modalImg=document.querySelector('#modal_img');
+let btClose=document.querySelector('#bt_close');
 let srcVal="";
 
 for(let i=0; imagens.length;i++){
@@ -13,5 +13,5 @@ for(let i=0; imagens.length;i++){
 }
 
 btClose.addEventListener('click', function(){
-    modal.classList.toggle('modal');
+    modal.classList.toggle('modal_active');
 });
