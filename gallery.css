@@ -36,6 +36,12 @@ h1{
 .small_img{
     height: 100%;
     cursor: pointer;
+    transition: all linear .4s;
+}
+
+.small_img:hover{
+    filter: blur(100%);
+    transform: scale(1.1);
 }
 
 .row{
@@ -54,6 +60,9 @@ h1{
     background-color: rgba(0,0,0,.7); 
     position: fixed; 
     visibility: hidden;
+    z-index: 1;
+    opacity: 0;
+    transition: visibility .7s, opacity .4s linear;
 }
 
 .modal_content{
@@ -73,8 +82,14 @@ h1{
     font-size: 25px;
     border: solid 1px white;
     cursor: pointer;
+    transition: all ease-out .3s;
+}
+
+#bt_close:hover{
+    background-color: blue;
 }
 
 .modal_active{
     visibility: visible;
+    opacity: 1;
 }

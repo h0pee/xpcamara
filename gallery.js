@@ -1,10 +1,10 @@
 let images=document.querySelectorAll('.small_img');
 let modal=document.querySelector('.modal');
 let modalImg=document.querySelector('#modal_img');
-const btClose = document.getElementById('bt_close')
+let btClose = document.querySelector('#bt_close')
 let srcVal="";
 
-for(let i=0; images.length; i++){
+for(let i=0; i<images.length; i++){
     console.log(images[i])
     images[i].addEventListener('click', function(){
         srcVal=images[i].getAttribute('src');
@@ -12,7 +12,6 @@ for(let i=0; images.length; i++){
         modal.classList.toggle('modal_active');
     });
 }
-
 
 btClose.addEventListener('click', function(){
     modal.classList.toggle('modal_active');
